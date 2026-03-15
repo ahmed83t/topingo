@@ -36,12 +36,14 @@
         }
 
         .logo {
-            font-size: 28px;
-            font-weight: 800;
-            background: linear-gradient(135deg, #ff9800, #ff6b6b);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 120px;
+            display: block;
+            margin: auto;
         }
 
         .nav-buttons {
@@ -379,7 +381,7 @@
             color: #ccc;
         }
 
-        /* قسم الاتصال (بدون عنوان وبدون هاتف) */
+        /* قسم الاتصال */
         .contact-section {
             margin: 60px 0;
         }
@@ -549,7 +551,11 @@
 <body>
 
 <header>
-    <div class="logo">Topingo Pro</div>
+    <!-- إضافة الصورة كشعار -->
+    <div class="logo">
+        <img src="file_000000003ea0720a8628ff4046f34c95.png" alt="Topingo Pro Logo">
+    </div>
+   
     <div class="nav-buttons">
         <button class="nav-btn active" onclick="showSection('home')">
             <i class="fas fa-home"></i> Recharge
@@ -856,7 +862,7 @@
         </div>
     </div>
 
-    <!-- قسم الاتصال (بدون عنوان وبدون هاتف) -->
+    <!-- قسم الاتصال -->
     <div id="contact-section" style="display: none;">
         <div class="hero">
             <h2>📞 Contact Us</h2>
@@ -864,11 +870,11 @@
         </div>
 
         <div class="contact-grid">
-            <!-- معلومات الاتصال - فقط البريد الإلكتروني -->
+            <!-- معلومات الاتصال -->
             <div class="contact-info">
                 <h3>Get in Touch</h3>
                
-                <!-- فقط البريد الإلكتروني -->
+                <!-- البريد الإلكتروني -->
                 <div class="info-item">
                     <div class="info-icon"><i class="fas fa-envelope"></i></div>
                     <div class="info-text">
@@ -878,7 +884,7 @@
                     </div>
                 </div>
 
-                <!-- ساعات العمل (اختياري) -->
+                <!-- ساعات العمل -->
                 <div class="info-item">
                     <div class="info-icon"><i class="fas fa-clock"></i></div>
                     <div class="info-text">
